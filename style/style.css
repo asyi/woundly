@@ -1,19 +1,32 @@
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 36px;
     grid-column-gap: 36px;
 }
 
-@media (max-width: 1024px) {
-    .grid-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 @media (max-width: 680px) {
     .grid-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info {
+    align-self: center;
+}
+
+.wound-info {
+    align-self: center;
+}
+
+.user-image__wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .wound-image__wrapper {
@@ -24,5 +37,9 @@
 
 .wound-image {
     border-radius: 10%;
+    border: 1px solid #e2e2e2;
+}
+
+.wound-image {
     border: 1px solid #e2e2e2;
 }
